@@ -1,0 +1,87 @@
+#!/bin/sh
+#
+# 	Instant Wordpress!
+# 	------------------
+# 	My script for installing the latest version of WordPress plus a number of plugins I find useful.
+#		
+# 	To use this script, go to the directory you want to install Wordpress to in the terminal and run this command:
+# 
+# 	curl scripts.snaptortoise.com/wordpress | sh
+#
+# 	There you go.
+#
+
+
+# Latest version of WP
+echo "Fetching WordPress...";
+wget --quiet http://wordpress.org/latest.zip;
+unzip -q latest.zip;
+
+# All-in-One-SEO-Pack
+echo "Fetching All-in-One-SEO-Pack plugin...";
+wget --quiet http://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip;
+unzip -q all-in-one-seo-pack.zip;
+mv all-in-one-seo-pack wordpress/wp-content/plugins/
+
+# Sitemap Generator
+echo "Fetching Google Sitemap Generator plugin...";
+wget --quiet http://downloads.wordpress.org/plugin/google-sitemap-generator.zip;	
+unzip -q  google-sitemap-generator.zip;	
+mv google-sitemap-generator wordpress/wp-content/plugins/
+
+# Secure WordPress
+echo "Fetching Secure WordPress plugin...";
+wget --quiet http://downloads.wordpress.org/plugin/secure-wordpress.zip;
+unzip -q  secure-wordpress.zip;
+mv secure-wordpress wordpress/wp-content/plugins/
+
+# Hierarchy Plugin
+echo "Fetching Hierarchy plugin...";
+wget --quiet http://downloads.wordpress.org/plugin/hierarchy.zip;
+unzip -q  hierarchy.zip;
+mv hierarchy wordpress/wp-content/plugins/
+
+# Image Widgets (Why isn't this standard?)
+echo "Fetching Image Widget plugin...";
+wget --quiet http://downloads.wordpress.org/plugin/image-widget.zip;
+unzip -q  image-widget.zip;
+mv image-widget wordpress/wp-content/plugins/
+
+# Super-cache
+echo "Fetching Super Cache plugin...";
+wget --quiet http://downloads.wordpress.org/plugin/wp-super-cache.zip;
+unzip -q  wp-super-cache.zip;
+mv wp-super-cache wordpress/wp-content/plugins/
+
+# W3 Total Cache (A little redundant with above, but I like options.)
+echo "Fetching W3 Total Cache...";
+wget --quiet http://downloads.wordpress.org/plugin/w3-total-cache.zip
+unzip -q  w3-total-cache.zip;
+mv w3-total-cache wordpress/wp-content/plugins/
+
+# Register Plus Redux (Good for membership-style sites)
+echo "Fetching Register Plus Redux...";
+wget --quiet http://downloads.wordpress.org/plugin/register-plus-redux.zip
+unzip -q register-plus-redux.zip
+mv register-plus-redux wordpress/wp-content/plugins/
+
+# Regenerate Thumbnails (good for when you need to make custom sizes)
+echo "Fetching Regenerate Thumbnails...";
+wget --quiet http://downloads.wordpress.org/plugin/regenerate-thumbnails.zip
+unzip -q regenerate-thumbnails.zip
+mv regenerate-thumbnails wordpress/wp-content/plugins/
+
+# WordPress Importer
+echo "Fetching WordPress Importer...";
+wget --quiet http://downloads.wordpress.org/plugin/wordpress-importer.zip
+unzip -q wordpress-importer.zip
+mv wordpress-importer wordpress/wp-content/plugins/
+
+# Cleanup
+echo "Cleaning up temporary files and directories...";
+rm *.zip
+
+# Move stuff into current directory
+mv wordpress/* .;
+rm -rf wordpress;
+echo "Done!";
