@@ -20,4 +20,6 @@ Plugin List
 - W3 Total Cache (A little redundant with above, but hey, I like options.)
 - Register Plus Redux (Good for membership-style sites)
 - Regenerate Thumbnails (good for when you need to change custom thumb sizes late in a project)
+- Taxonomy Taxi
+- Custom Post Type UI 
 - WordPress Importer
