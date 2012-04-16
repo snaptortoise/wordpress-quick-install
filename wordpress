@@ -71,6 +71,18 @@ wget --quiet http://downloads.wordpress.org/plugin/regenerate-thumbnails.zip
 unzip -q regenerate-thumbnails.zip
 mv regenerate-thumbnails wordpress/wp-content/plugins/
 
+# Taxonomy Taxi
+echo "Fetching Taxonomy Taxi...";
+wget --quiet http://downloads.wordpress.org/plugin/taxonomy-taxi.zip
+unzip -q taxonomy-taxi.zip
+mv taxonomy-taxi wordpress/wp-content/plugins/
+
+# Custom Post Type UI
+echo "Fetching Custom Post Type UI...";
+wget --quiet http://downloads.wordpress.org/plugin/custom-post-type-ui.zip
+unzip -q custom-post-type-ui.zip
+mv custom-post-type-ui wordpress/wp-content/plugins/
+
 # WordPress Importer
 echo "Fetching WordPress Importer...";
 wget --quiet http://downloads.wordpress.org/plugin/wordpress-importer.zip
