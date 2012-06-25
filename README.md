@@ -23,3 +23,5 @@ Plugin List
 - Taxonomy Taxi
 - Custom Post Type UI 
 - WordPress Importer
+- Password Protect WordPress
+- WP-Quick-Pages
