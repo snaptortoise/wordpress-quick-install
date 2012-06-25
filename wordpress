@@ -90,10 +90,16 @@ unzip -q wordpress-importer.zip
 mv wordpress-importer wordpress/wp-content/plugins/
 
 # Password Protect WordPress
-echo "Fetching Password Protect WordPress";
-wget -- quiet http://downloads.wordpress.org/plugin/password-protect-wordpress-blog.zip
+echo "Fetching Password Protect WordPress...";
+wget --quiet http://downloads.wordpress.org/plugin/password-protect-wordpress-blog.zip
 unzip -q password-protect-wordpress-blog.zip
 mv password-protect-wordpress-blog wordpress/wp-content/plugins/
+
+# WP-Quick-Pages
+echo "Fetching WP-Quick-Pages...";
+wget --quiet http://downloads.wordpress.org/plugin/wp-quick-pages.zip
+unzip -q wp-quick-pages.zip
+mv wp-quick-pages wordpress/wp-content/plugins/
 
 # Cleanup
 echo "Cleaning up temporary files and directories...";
