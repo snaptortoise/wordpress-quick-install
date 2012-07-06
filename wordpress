@@ -101,6 +101,12 @@ wget --quiet http://downloads.wordpress.org/plugin/wp-quick-pages.zip
 unzip -q wp-quick-pages.zip
 mv wp-quick-pages wordpress/wp-content/plugins/
 
+# Simple Page Ordering
+echo "Fetching Simple Page Ordering...";
+wget --quiet http://downloads.wordpress.org/plugin/simple-page-ordering.zip
+unzip -q simple-page-ordering.zip
+mv simple-page-ordering wordpress/wp-content/plugins/
+
 # Cleanup
 echo "Cleaning up temporary files and directories...";
 rm *.zip
