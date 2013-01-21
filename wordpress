@@ -107,6 +107,12 @@ wget --quiet http://downloads.wordpress.org/plugin/simple-page-ordering.zip
 unzip -q simple-page-ordering.zip
 mv simple-page-ordering wordpress/wp-content/plugins/
 
+# FeedWordPress
+echo "FeedWordPress...";
+wget --quiet http://downloads.wordpress.org/plugin/feedwordpress.zip
+unzip -q feedwordpress.zip
+mv feedwordpress wordpress/wp-content/plugins/
+
 # Cleanup
 echo "Cleaning up temporary files and directories...";
 rm *.zip
