@@ -25,3 +25,4 @@ Plugin List
 - WordPress Importer
 - Password Protect WordPress
 - WP-Quick-Pages
+- FeedWordPress
