@@ -114,4 +114,12 @@ rm *.zip
 # Move stuff into current directory
 mv wordpress/* .;
 rm -rf wordpress;
+
+
+# Disable the built-in file editor because it's a hacking vector and I hate it
+echo "Disabling file editor...";
+echo "
+/* Disable the file editor */
+define(‘DISALLOW_FILE_EDIT’, true);" >> wp-config-sample.php
+
 echo "Done!";
