@@ -107,6 +107,12 @@ wget --quiet http://downloads.wordpress.org/plugin/feedwordpress.zip
 unzip -q feedwordpress.zip
 mv feedwordpress wordpress/wp-content/plugins/
 
+# BackupWPup
+echo "BackupWPup...";
+wget --quiet http://downloads.wordpress.org/plugin/backwpup.zip
+unzip -q backwpup.zip
+mv backwpup wordpress/wp-content/plugins/
+
 # Cleanup
 echo "Cleaning up temporary files and directories...";
 rm *.zip
