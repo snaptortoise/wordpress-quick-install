@@ -1,7 +1,7 @@
 WordPress Quick Install
 =======================
 
-I keep this script on my server so that I can start an up-to-date WordPress project almost anywhere, along with the plugins I enjoy and am used to working with.  It's hosted at http://scripts.snaptortoise.com/wordpress, so I can execute this from the terminal by typing:
+I keep this script on my server so that I can start an up-to-date WordPress project almost anywhere, along with the plugins I enjoy and am used to working with.  It's hosted here on GitHub, so I can execute this from the terminal by typing:
 
 `curl https://raw.github.com/snaptortoise/wordpress-quick-install/master/wordpress | sh`
 
