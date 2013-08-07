@@ -26,3 +26,4 @@ Plugin List
 - Password Protect WordPress
 - WP-Quick-Pages
 - FeedWordPress
+- BackWPup
