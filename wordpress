@@ -113,9 +113,22 @@ wget --quiet http://downloads.wordpress.org/plugin/backwpup.zip
 unzip -q backwpup.zip
 mv backwpup wordpress/wp-content/plugins/
 
+# Options Framework
+echo "Fetching Options Framework plugin..."
+wget --quiet "http://downloads.wordpress.org/plugin/options-framework.zip"
+uznip -q options-framework.zip
+mv options-framework wordpress/wp-content/plugins/
+
+# Meta
+echo "Fetching Meta Box plugin..."
+wget --quiet "http://downloads.wordpress.org/plugin/meta-box.zip"
+uznip -q meta-box.zip
+mv meta-box wordpress/wp-content/plugins/
+
 # Cleanup
 echo "Cleaning up temporary files and directories...";
 rm *.zip
+
 
 # Move stuff into current directory
 mv wordpress/* .;
