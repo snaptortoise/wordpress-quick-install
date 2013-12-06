@@ -27,3 +27,5 @@ Plugin List
 - WP-Quick-Pages
 - FeedWordPress
 - BackWPup
+- [Meta Box](http://wordpress.org/plugins/meta-box/)
+- [Options Framework](http://wordpress.org/plugins/options-framework/)
