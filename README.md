@@ -1,3 +1,8 @@
+**Deprecated 2018**: This project has been dormant a long time, but if you're still looking for something like this you should probably check out [WP-CLI](https://wp-cli.org/) if you haven't already. It's better in pretty much every conceivable way.
+
+I've left everything else intact for posterity.
+
+
 WordPress Quick Install
 =======================
 
